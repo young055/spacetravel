@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+
+/*========== contents ==========*/
+.slides li {position:relative;} /* 배경이미지와 텍스트의 부모요소 */
+
+.fs-bg-1 {background:url(../imgs/sc-slide1.jpg) no-repeat center center; background-size:cover;}
+.fs-bg-2 {background:url(../imgs/sc-slide2.jpg) no-repeat center center; background-size:cover;}
+
+
+/*========== prev + next button ==========*/
+.flex-direction-nav a {height:80px;}
+.flex-nav-prev i, .flex-nav-next i {font-size:40px; color:#e2e2e2;}
+
+
+/*========== control button ==========*/
+.flex-control-nav {bottom:20px;}
+.flex-control-nav li a {background:#d6d6d6;}
+.flex-control-nav li a.flex-active {background:#0068b7;}
+
+
+@media screen and (min-width:1350px) {
+    .fs-bg {height:500px;} /* 슬라이드 배경 이미지 */
+
+    .fs-contents { /* 텍스트 */
+        position:absolute; left:11%; top:220px; width:100%;
+        color:#f6f6f6; text-shadow:1px 1px 1px #000;
+    }
+    .fs-contents h2 {font-size:54px; color:#f6f6f6; text-transform:uppercase;}
+    .fs-contents .fs-msg {width:550px; padding-top:20px; font-size:20px;}
+}
+
+@media screen and (min-width:1050px) and (max-width:1349px) {
+    .fs-bg {height:500px;}
+
+    .fs-contents { /* 텍스트 */
+        position:absolute; left:11%; top:220px; width:100%;
+        color:#f6f6f6; text-shadow:1px 1px 1px #000;
+    }
+    .fs-contents h2 {font-size:54px; color:#f6f6f6; text-transform:uppercase;}
+    .fs-contents .fs-msg {width:500px; padding-top:20px; font-size:18px;}
+}
+
+@media screen and (min-width:700px) and (max-width:1049px) {
+    .fs-bg {height:500px;}
+
+    .fs-contents { /* 텍스트 */
+        position:absolute; left:50%; top:220px; width:620px;
+        color:#f6f6f6; text-align:center; text-shadow:1px 1px 1px #000;
+        transform:translateX(-50%);
+    }
+    .fs-contents h2 {font-size:44px; text-transform:uppercase;}
+    .fs-contents p {width:78%; margin:0 auto; font-size:18px;}
+    .fs-contents .fs-msg {padding-top:30px;}
+}
+
+@media screen and (max-width:699px) {
+    .fs-bg {height:700px;}
+
+    .fs-contents { /* 텍스트 */
+        position:absolute; left:50%; top:300px; width:350px;
+        color:#f6f6f6; text-align:center; text-shadow:1px 1px 1px #000;
+        transform:translateX(-50%);
+    }
+    .fs-contents h2 {font-size:44px; text-transform:uppercase;}
+    .fs-contents .fs-msg {padding-top:20px;}
+}

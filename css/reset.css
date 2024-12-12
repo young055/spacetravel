@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:gill; /* 서브타이틀 */
+    src:url('../fonts/GillSansMT.eot');
+    src:url('../fonts/GillSansMT.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gowun+Batang&display=swap');
+/* font-family: "Gowun Batang" serif; 본문 / font-family: "Courgette", cursive; 메인타이틀*/
+
+* {margin:0; padding:0; box-sizing:border-box;}
+/*브라우저에는 '내장 스타일시트'가 있다. 내장 스타일시트에 박스에 대한 여백이 설정되어있다. 따라서 박스의 여백을 초기화시킨다.*/
+/*box-sizing:border-box; 박스의 너비값과 높이값에 안쪽 여백 값과 테두리 값을 포함시킨다.*/
+body {
+    font-family: "Gowun Batang" serif; font-size:16px; color:#333; font-weight:400;
+    background:#fff; overflow-x:hidden;
+}
+h1,h2 {font-family: "Courgette", cursive;}
+h3,h4,h5,h6 {font-family:gill;}
+ul li {list-style:none;}
+a {display:block; text-decoration:none;}
+
+.flex {display:flex;}
+.flex-center {display:flex; justify-content:center; align-items:center;}
+.flex-between {display:flex; justify-content:space-between; align-items:center;}
+
+
+
+
+
+
+
+
+
+
